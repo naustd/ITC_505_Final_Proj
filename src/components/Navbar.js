@@ -1,8 +1,9 @@
 import "./Navbar.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import logo from "./Assets/logo.jpg";
 import React from "react";
+
 function Navbar({ onLoginClick, handleInputChange, query, setShow }) {
   return (
     <>
@@ -29,6 +30,7 @@ function Navbar({ onLoginClick, handleInputChange, query, setShow }) {
               fill="#FF7917"
             />
           </svg> */}
+          <img src={logo} alt="orgFoodImg" className="logo" />
         </a>
 
         <div className="search-bar-container">
